@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39887d2729c6fc643a8f9315768229cd, type: 3}
+  m_Name: New SpellCardData
+  m_EditorClassIdentifier: 
+  cardName: 666
+  cardID: 777
+  cardImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  cardDescription: "\u7B56\u5212\u4E13\u7528\u53EF\u89C6\u5316\u6570\u636E\u914D\u7F6E\u9762\u677F"
+  baseCost: 127
+  entityTypeName: "\u7B56\u5212\u4E0D\u8981\u52A8\u8FD9\u4E2A\u73A9\u610F"
+  cardType: 0
+  cardRarity: 1
+  worldTabs: 00000000
+  normalTabs: 

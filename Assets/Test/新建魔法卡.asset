@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39887d2729c6fc643a8f9315768229cd, type: 3}
+  m_Name: "\u65B0\u5EFA\u9B54\u6CD5\u5361"
+  m_EditorClassIdentifier: 
+  cardID: 
+  cardName: 
+  baseCost: 4294967295
+  cardDescription: 
+  cardStory: 
+  isDerivative: 0
+  cardRarity: 3
+  worldTab: 0
+  forceTab: 0
+  normalTabs: 0000000001000000
+  cardImage: {fileID: 0}
+  entityTypeName: 
+  cardType: 0
+  targetType: 1
+  targetRange: 2
+  damage: 0
+  heal: 0
+  element: 0
