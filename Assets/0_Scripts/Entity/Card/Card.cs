@@ -19,7 +19,7 @@ public abstract class Card
     }
     public virtual bool CanPlay()
     {
-        return owner.cost >= currentCost;
+        return owner.currentCost >= currentCost;
     }
     /// <summary>
     /// 获取动态卡牌描述

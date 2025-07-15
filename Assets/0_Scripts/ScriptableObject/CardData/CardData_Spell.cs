@@ -17,5 +17,6 @@ public class CardData_Spell : CardData
     void OnValidate()
     {
         cardType = CardType.魔法;
+        base.entityTypeName = "Card_Spell";
     }
 }

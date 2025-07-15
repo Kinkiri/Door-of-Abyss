@@ -12,21 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39887d2729c6fc643a8f9315768229cd, type: 3}
   m_Name: "\u65B0\u5EFA\u9B54\u6CD5\u5361"
   m_EditorClassIdentifier: 
-  cardID: 
-  cardName: 
-  baseCost: 4294967295
-  cardDescription: 
+  cardID: "\u6D4B\u8BD5\u4F60\u7684\u78012"
+  cardName: "\u6D4B\u8BD5_\u80DC\u5229"
+  baseCost: 0
+  cardDescription: "\u6253\u51FA\u540E,\u83B7\u5F97\u80DC\u5229"
   cardStory: 
   isDerivative: 0
   cardRarity: 3
-  worldTab: 0
-  forceTab: 0
-  normalTabs: 0000000001000000
-  cardImage: {fileID: 0}
-  entityTypeName: 
+  worldTab: 1
+  forceTab: 1
+  normalTabs: 00000000
+  cardImage: {fileID: 21300000, guid: ace000e3fb382cb44a93ede117aaa70a, type: 3}
+  entityTypeName: Card_Spell
   cardType: 0
-  targetType: 1
-  targetRange: 2
+  targetType: 0
+  targetRange: 0
   damage: 0
   heal: 0
   element: 0

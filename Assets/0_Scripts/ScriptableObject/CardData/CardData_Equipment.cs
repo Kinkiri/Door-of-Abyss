@@ -13,5 +13,6 @@ public class CardData_Equipment : CardData
     void OnValidate()
     {
         cardType = CardType.装备;
+        base.entityTypeName = "Card_Equipment";
     }
 }

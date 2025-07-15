@@ -10,5 +10,6 @@ public class CardData_Field : CardData
     void OnValidate()
     {
         cardType = CardType.场地;
+        base.entityTypeName = "Card_Field";
     }
 }

@@ -9,11 +9,12 @@ public class CardData_Unit : CardData
 {
     [Header("单位参数")]
     public int attack; // 攻击力
-    public int maxHealth; // 最大生命值
+    public int initialHealth; // 初始最大生命值
     public UnitType unitType; // 单位类型
     public Element element; // 元素类型
     void OnValidate()
     {
         cardType = CardType.单位;
+        base.entityTypeName = "Card_Unit";
     }
 }
