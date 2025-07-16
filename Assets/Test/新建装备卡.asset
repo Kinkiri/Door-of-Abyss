@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96e175dd8a422b40b7b081f1eb0566f, type: 3}
+  m_Name: "\u65B0\u5EFA\u88C5\u5907\u5361"
+  m_EditorClassIdentifier: 
+  cardID: 3
+  cardName: "\u88C5\u5907_\u76FE"
+  baseCost: 3
+  cardDescription: "\u653B\u51FB\u529B+1\\n\u751F\u547D\u503C+5\\n\u6BCF\u56DE\u5408\u5F00\u59CB\u751F\u62102\u70B9\u62A4\u76FE"
+  cardStory: "\u8349\u8349\u8349"
+  isDerivative: 0
+  cardRarity: 2
+  worldTab: 2
+  forceTab: 2
+  normalTabs: 0100000000000000
+  cardImage: {fileID: 1402004482, guid: a5129965d9f7c604cb1842f6662f7e07, type: 3}
+  entityTypeName: Card_Equipment
+  cardType: 2
+  healthIncrease: 5
+  attackIncrease: 1
