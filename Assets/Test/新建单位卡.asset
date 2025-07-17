@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: "\u65B0\u5EFA\u5355\u4F4D\u5361"
   m_EditorClassIdentifier: 
   cardID: 1
-  cardName: "\u5355\u4F4D_\u6D4B\u8BD51"
-  baseCost: 0
-  cardDescription: "\u5355\u4F4D\u7684\u63CF\u8FF0\\\u6D4B\u8BD5\u6D4B\u6D4B"
-  cardStory: 555
+  cardName: "\u6D4B\u8BD5"
+  baseCost: 2
+  cardDescription: "\u6D4B\u8BD5"
+  cardStory: "\u6211"
   isDerivative: 0
-  cardRarity: 0
+  cardRarity: 1
   worldTab: 1
   forceTab: 1
   normalTabs: 0000000001000000
-  cardImage: {fileID: 365656240, guid: a5129965d9f7c604cb1842f6662f7e07, type: 3}
+  cardImage: {fileID: 1299271282, guid: a5129965d9f7c604cb1842f6662f7e07, type: 3}
   entityTypeName: Card_Unit
   cardType: 1
-  attack: 5
-  initialHealth: 6
+  attack: 2
+  initialHealth: 3
   unitType: 0
   element: 0

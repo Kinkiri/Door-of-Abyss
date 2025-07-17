@@ -10,10 +10,6 @@ public class Card_Unit : Card
     public int maxHealth;
     public int attack;
     public bool isPlaced; // 
-    static Card_Unit()
-    {
-
-    }
     public Card_Unit(CardData data, Player owner) : base(data, owner)
     {
         CardData_Unit data_unit = (CardData_Unit)data;
@@ -22,5 +18,10 @@ public class Card_Unit : Card
     public virtual void OnPlaced()
     {
         currentHealth = maxHealth;
+        isPlaced = true;
+    }
+    public virtual void OnAttack(Card_Unit target)
+    {
+        //.TakeDamage(attack);
     }
 }

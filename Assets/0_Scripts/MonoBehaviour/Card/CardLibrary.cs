@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 /// <summary>
 /// 卡牌库
 /// </summary>
@@ -13,21 +14,33 @@ public class CardLibrary : MonoBehaviour
     }
 
     [Header("注册卡牌列表")]
-    public List<CardData> cardList = new();
+    public List<CardData> InputCardList = new();
+    private List<CardData> cardList = new();
     public Dictionary<string, CardData> cardDict = new();
     public Dictionary<string, System.Type> cardTypeDict = new();
     void Start()
     {
-        // 加载卡牌数据
-        foreach (CardData card in cardList)
+        ReSetCardList(); // 检查卡牌数据
+        LoadCardData(); // 加载卡牌数据
+    }
+    private void ReSetCardList() // 重置卡牌数据
+    {
+        // 除掉重复卡和空卡
+        cardList = InputCardList.Distinct().Where(card => card!= null).ToList();
+        // 排序
+        cardList = cardList.OrderBy(card => card.cardID).ToList();
+    }
+    private void LoadCardData() // 加载卡牌数据
+    {
+        foreach (CardData data in cardList)
         {
-            cardDict.Add(card.cardID, card);
-            cardTypeDict.Add(card.cardID, System.Type.GetType(card.entityTypeName));
-            Debug.Log(card.cardID + " " + System.Type.GetType(card.entityTypeName));
+            cardDict.Add(data.cardID, data);
+            cardTypeDict.Add(data.cardID, System.Type.GetType(data.entityTypeName));
+            Debug.Log(data.cardID + " " + System.Type.GetType(data.entityTypeName));
         }
         Debug.Log($"共加载了{cardList.Count}张卡牌");
     }
-    public static CardData GetCardData(string cardID) // 查询卡牌数据
+    public static CardData GetCardData(string cardID) // 获取卡牌数据
     {
         if (Instance.cardDict.ContainsKey(cardID))
         {
@@ -39,7 +52,7 @@ public class CardLibrary : MonoBehaviour
             return null;
         }
     }
-    public static System.Type GetCardType(string cardID) // 查询卡牌类型
+    public static System.Type GetCardType(string cardID) // 获取卡牌类型
     {
         if (Instance.cardTypeDict.ContainsKey(cardID))
         {
@@ -50,5 +63,9 @@ public class CardLibrary : MonoBehaviour
             Debug.LogError($"卡牌{cardID}不存在");
             return null;
         }
+    }
+    public static bool HasCard(string cardID) // 是否存在卡牌
+    {
+        return Instance.cardDict.ContainsKey(cardID);
     }
 }
